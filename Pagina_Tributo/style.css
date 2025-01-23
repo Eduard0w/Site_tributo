@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(212, 212, 212);
+}
+
+header {
+  background-color: rgb(255, 169, 70);
+  color: rgb(46, 33, 33);
+  text-align: center;
+  padding: 20px;
+  font-family: "Macondo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#section_inicial {
+  height: 570px;
+  background-image: url(./Image/The_Last_Supper.jpg);
+  background-size: cover;
+  background-color: rgb(46, 33, 33);
+}
+.banner {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+#section_inicial .portrait {
+  background-image: url(../Pagina_Tributo/Image/leonardo-da-vinci-self-portrait.jpg);
+  background-size: cover;
+  width: 250px;
+  height: 300px;
+  border-radius: 50%;
+}
+.begin_text {
+  color: rgb(17, 8, 8);
+  text-align: center;
+  font-family: "Macondo", serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 30px;
+}
+
+#section_principal {
+  background-color: rgb(46, 33, 33);
+  color: rgb(212, 212, 212);
+}
+#section_principal .container_prime {
+  display: flex;
+  padding: 40px;
+}
+.container_prime section h2 {
+  text-align: center;
+}
+.section_left {
+  flex: 1;
+}
+.section_left .section_left_text {
+  padding: 22px 40px 0 40px;
+  font-size: 17px;
+  font-family: Arial;
+}
+.section_left .section_left_text span {
+  color: rgb(255, 169, 70);
+  font-weight: bold;
+}
+#importante {
+  color: rgb(170, 85, 255);
+}
+#linha_between div {
+  background-color: rgb(255, 169, 70);
+  width: 1px;
+  height: 600px;
+}
+.section_right {
+  flex: 1;
+}
+.section_right .art_images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+.section_right .art_images figure {
+  margin-top: 5px;
+}
+.section_right .art_images figure #image1 {
+  width: 500px;
+  height: 250px;
+}
+.section_right .art_images figure #image2,
+#image3 {
+  width: 200px;
+  height: 300px;
+}
+#image2 {
+  margin-right: 50px;
+}
+
+footer {
+  border-top: 2px solid rgb(255, 169, 70);
+  width: 100%;
+  background-color: rgb(14, 4, 4);
+  color: rgb(212, 212, 212);
+}
+footer p {
+  text-align: center;
+  padding: 20px 0 20px 0px;
+}
+footer a {
+  color: rgb(255, 169, 70);
+}
+
+@media (max-width: 740px) {
+  body{
+    background-color: rgb(17, 8, 8);
+    width: 100%;
+  }
+  #section_inicial {
+    background-size: cover;
+  }
+  .begin_text {
+    width: 90%;
+}
+  #section_principal .container_prime {
+    display: flex;
+    flex-direction: column;
+  }
+  #linha_between div {
+    background-color: rgb(255, 169, 70);
+    width: 100%;
+    height: 1px;
+    margin: 20px 0 20px 0;
+  }
+}
+@media (max-width: 490px) {
+  body header {
+    width: 100%;
+  }
+   
+  body #section_inicial .begin_text h1 {
+    width: 100%;
+    color: rgb(255, 236, 236);
+  }
+  body #section_inicial .begin_text h1 span {
+    color: rgb(160, 85, 0);
+  }
+  body #section_principal {
+    width: 100%;
+  }
+  body footer {
+    width: 100%;
+  }
+  #image2 {
+    margin-right: 0px;
+  }
+  .section_right .art_images figure #image2,
+  #image3 {
+    width: 170px;
+    height: 250px;
+  }
+  .section_right .art_images figure #image1 {
+    width: 100%;
+    height: 150px;
+}
+}
+
+@media (max-width: 400px) {
+  body header {
+    width: 350px;
+  }
+  body #section_inicial {
+    width: 380px;
+  }
+  body #section_inicial .begin_text h1 {
+    width: 100%;
+    color: rgb(255, 236, 236);
+  }
+  body #section_inicial .begin_text h1 span {
+    color: rgb(160, 85, 0);
+  }
+  body #section_principal {
+    width: 380px;
+  }
+  body footer {
+    width: 375px;
+  }
+  #image2 {
+    margin-right: 0px;
+  }
+  .section_right .art_images figure #image2,
+  #image3 {
+    width: 148px;
+    height: 244px;
+  }
+  .section_right .art_images figure #image1 {
+    width: 100%;
+    height: 150px;
+}
+}
