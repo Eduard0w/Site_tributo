@@ -28,7 +28,7 @@ header {
   padding: 10px;
 }
 #section_inicial .portrait {
-  background-image: url(../Pagina_Tributo/Image/leonardo-da-vinci-self-portrait.jpg);
+  background-image: url(./Image/leonardo-da-vinci-self-portrait.jpg);
   background-size: cover;
   width: 250px;
   height: 300px;
